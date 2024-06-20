@@ -1,0 +1,23 @@
+.cleint_swiper .cleint_swiperSlide img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.cleint_swiper{
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width:567px) {
+    .cleint_swiper .cleint_swiperSlide img{
+        width: 155px;
+        height: 155px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .cleint_swiper .cleint_swiperSlide img{
+        width: 125px;
+        height: 125px;
+    }
+}

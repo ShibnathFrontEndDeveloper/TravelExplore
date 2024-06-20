@@ -1,0 +1,51 @@
+.header .bg-body-tertiary{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background: #252138 !important;
+}
+.header Nav img{
+    width: 150px;
+}
+
+.header Nav a{
+    text-decoration: none;
+    margin-left: 15px;
+    color: #fff;
+}
+.header Nav a.active{
+    color: #fc3c3c;
+}
+.header.is-sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.header.is-sticky .bg-body-tertiary{
+    background: #fffdfdb3 !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 35%);
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    
+}
+
+.header.is-sticky  Nav a{
+    color: #252138;
+}
+
+.header.is-sticky  Nav a.active{
+    color: #fc3c3c;
+}
+
+.header .navbar-collapse {
+    flex-grow: 0;
+}
+
+
+
