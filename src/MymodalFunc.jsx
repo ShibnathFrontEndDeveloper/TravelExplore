@@ -3,7 +3,7 @@
 
 function MymodalFunc(props) {
   return (
-    <div>MymodalFunc
+    <div>
 
     <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
       <Modal.Header closeButton>

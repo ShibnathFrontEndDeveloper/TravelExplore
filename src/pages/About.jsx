@@ -9,6 +9,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup'
 import MymodalFunc from "../MymodalFunc";
 import {Link} from 'react-router-dom'
+import Footer from "./Footer";
 
 
 
@@ -146,12 +147,12 @@ function About() {
             </Form.Group>
             <Button type="submit">Submit form</Button>
           </Form>
-        </Container>
-        <MymodalFunc 
-         show={ModalShow}
-         onHide={()=>setModalShow(false)}
         
-        />
+        </Container>
+
+        <Footer/>
+
+        <MymodalFunc show={ModalShow} onHide={()=>setModalShow(false)}/>
         
     </div>
   )

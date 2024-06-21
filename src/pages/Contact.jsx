@@ -1,4 +1,5 @@
 import Header from "../Header"
+import Footer from "./Footer"
 
 
 function Contact() {
@@ -6,6 +7,7 @@ function Contact() {
     <div>
         <Header/>
         <h1>My Contact Page</h1>
+        <Footer/>
     </div>
   )
 }

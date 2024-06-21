@@ -47,5 +47,22 @@
     flex-grow: 0;
 }
 
-
+@media screen and (max-width:992px) {
+    .navbar-toggler{
+        border: none;
+        box-shadow: none;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    .navbar-toggler-icon{
+        background-image: url(../public/Vector.png);
+        transform: rotate(90deg);
+        transition: .5s ease-in-out;
+    }
+    .navbar-toggler.collapsed .navbar-toggler-icon {
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+    }
+}
 

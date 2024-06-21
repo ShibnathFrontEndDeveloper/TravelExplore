@@ -63,6 +63,7 @@ function Detailstrip() {
                       <div className="position_content_text_box">
                         <div className="facility_box">
                           <h2>Trip Name</h2>
+                          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur sed vitae tempora, laudantium minus cum et, sint nostrum eius molestias rerum, doloremque accusantium! Assumenda deserunt dicta molestiae fugiat veritatis cum!</p>
                           <Button variant="primary">
                             Profile <Badge bg="secondary">9</Badge>
                             <span className="visually-hidden">unread messages</span>
@@ -129,6 +130,7 @@ function Detailstrip() {
                       <div className="position_content_text_box">
                         <div className="facility_box">
                           <h2>Trip Name</h2>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat esse, labore provident saepe cupiditate voluptatem facilis nemo expedita quis aperiam.</p>
                           <Button variant="primary">
                             Profile <Badge bg="secondary">9</Badge>
                             <span className="visually-hidden">unread messages</span>
