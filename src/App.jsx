@@ -8,6 +8,7 @@ import Login from './pages/Login'
 import {BrowserRouter, Routes,  Route} from 'react-router-dom'
 import Gallery from './pages/Gallery'
 import AddPage from './pages/AddPage'
+import Detailstrip from './pages/Detailstrip';
 
 function App() {
  
@@ -21,8 +22,7 @@ function App() {
         <Route path={'/Gallery'} element={<Gallery/>}></Route>
         <Route path={'/Login'} element={<Login/>}></Route>
         <Route path={'/AddPage'} element={<AddPage/>}></Route>
- 
-
+        <Route path={'/Detailstrip'} element={<Detailstrip/>}></Route>
       </Routes>
     </BrowserRouter>
   )

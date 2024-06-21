@@ -1,13 +1,44 @@
-.cleint_swiper .cleint_swiperSlide img{
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
+.cleint_swiper{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
+.cleint_swiper .cleint_swiperSlide .client_slider{
+    border:1px solid #ff5656;
+    position: relative;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cleint_swiper .cleint_swiperSlide .client_slider:hover{
+    box-shadow: 2px 5px 8px 10px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 2px 5px 8px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 2px 5px 8px 10px rgba(0, 0, 0, 0.2);
+}
+.cleint_swiper .cleint_swiperSlide .client_slider img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.cleint_swiper .cleint_swiperSlide .client_slider .dtls_box{
+    margin-left: 80px;
+}
 .cleint_swiper{
     margin-bottom: 50px;
 }
-
+.cleint_swiper .swiper-button-prev, .cleint_swiper .swiper-button-next{
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.cleint_swiper .swiper-button-prev::after, .cleint_swiper .swiper-button-next::after{
+    font-size: 15px;
+}
 @media screen and (max-width:567px) {
     .cleint_swiper .cleint_swiperSlide img{
         width: 155px;

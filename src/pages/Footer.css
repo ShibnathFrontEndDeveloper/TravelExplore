@@ -1,5 +1,5 @@
 .footer{
-    background: #23212c;
+    background: #23212cec;
     padding: 50px 0px;
     position: relative;
 }
@@ -7,14 +7,82 @@
     color: #dddddd;
 }
 .footer .newsForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer .newsForm .form-control{
+    width: 100%;
+}
+.footer .companyDtls{
+    color: #cececec7;
+    font-size: 12px;
+    text-align: justify;
+    font-weight: 100;
+}
+
+.footer .newsForm button{
+    background: rgb(255, 91, 91);
+    border: none;
+    box-shadow: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.footer .footer_content{
+    margin-bottom: 30px;
+}
+.footer .socialLinks ul{
+    display: flex;
+}
+.footer .footer_content p{
+    padding-right: 30px;
+}
+.footer .footer_content ul{
+    list-style: none;
+}
+.footer .footer_content ul li{
+    padding-bottom: 15px;
+}
+.footer .footer_content ul li a{
+    text-decoration: none;
+    color: #e9e9e9;
+    font-weight: lighter;
+}
+.footer .footer_content:nth-child(2){
+    padding-left: 30px;
+}
+
+.footer .footer_content h1{
+    font-size: 18px;
+    position: relative;
+}
+
+.footer .footer_content h1::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 80px;
+    height: 2px;
+    background: rgb(255, 72, 72);
+    border-radius: 10px;
+}
+.footer .footer_content ul{
+    padding-left: 0;
+}
+.lower_footer{
     background: #23212c;
     position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    display: flex;
-    justify-content: stretch;
+    bottom: 0;
+    left: 0;
+    right:0;
+    padding: 20px 0px;
+}
+
+.lower_footer p{
+    color: rgb(255, 162, 22);
+    margin-bottom: 0;
 }

@@ -1,6 +1,6 @@
 import Header from "../Header";
 import Container from "react-bootstrap/esm/Container";
-// import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import {Swiper, SwiperSlide} from 'swiper/react';
@@ -16,23 +16,12 @@ import './Home.css';
 import AddPage from "./AddPage";
 import Cleintreview from "./Cleintreview";
 import Footer from "./Footer";
-// import Form from 'react-bootstrap/Form';
-// import { useState } from "react";
+import TripCard from "./TripCard";
 
 
 
 function Home() {
-//  const [validated, setValidated] = useState(false);
 
-//   const handleSubmit = (event) => {
-//     const form = event.currentTarget;
-//     if (form.checkValidity() === false) {
-//       event.preventDefault();
-//       event.stopPropagation();
-//     }
-
-//     setValidated(true);
-//   };
   return (
     <div>
         <Header/>
@@ -109,270 +98,45 @@ function Home() {
             </div>
           </div>
         </Container>
-        {/* <Container>
-            <div className="position_container">
-              <div className="position_Row">
-                <div className="position_box1">
-                  <div className="position_box_heading">
-                    <h4>Search your destination</h4>
-                  </div>
-                  <Form noValidate validated={validated} onSubmit={handleSubmit} className="mt-4">
-                    <Form.Group className="mb-3">
-                      <Form.Check required
-                        label="For Place"
-                        feedback="You must select before submitting."
-                        feedbackType="invalid"
-                      
-                      />
-                    </Form.Group>
-                    <Form.Group className="mb-3">
-                      <Form.Check required
-                        label="For Date"
-                        feedback="You must select before submitting."
-                        feedbackType="invalid"
-                      
-                      />
-                    </Form.Group>
-                    <Form.Control type="date"  feedback="You must select date."
-                        feedbackType="invalid"/>
-                    <Form.Range />
-                    <Button type="submit">Submit form</Button>
-                  </Form>
-                </div>
-                <div className="position_box2">
-                  <div className="position_content">
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                    <div className="position_content_box">
-                      <img src={'./images/malaysia.jpg'} width={'100%'} alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </Container> */}
 
         <Container>
           <h2 className="text-center foreign_heading">Foreign Trip</h2>
           <Row>
             <Col lg={4} md={6}>
-              <div className="tourList_box">
-                <div className="tourList_dtls_box">
-                  <div className="listImg_box">
-                    <Link><img src="./images/Maldives.jpg" alt=""/></Link>
-                  </div>
-                  <div className="listText_box px-3">
-                    <Link><h2>Maldives<span>(See beach beautiful site)</span></h2></Link>
-                    <div className="listText_price_box">
-                      <div className="listText_tag_box">
-                        <h2>Tow Nights</h2>
-                      </div>
-                      <div className="listText_tag_box listText_tagPrice_box">
-                        <h2><FaRupeeSign/>40,000.00</h2>
-                      </div>
-                    </div>
-                    <div className="listText_tag_box_articles">
-                        <p>The Maldives consists of 1,190 coral...</p>
-                    </div>
-                  </div>
-                  <div className="addTag_box">
-                    <p>Best Seller</p>
-                  </div>
-                </div>
-              </div>
+              <TripCard title='Maladives' subTitle='Two Nights' rupee="40,000.00"
+               cobtent="The Maldives consists of 1,190 coral..." sale="Best Sale" 
+               ImageSource="./images/Maldives.jpg"/>
             </Col>
             <Col lg={4} md={6}>
-              <div className="tourList_box">
-                <div className="tourList_dtls_box">
-                  <div className="listImg_box">
-                    <Link><img src="./images/malaysia2.jpg" alt=""/></Link>
-                  </div>
-                  <div className="listText_box px-3">
-                    <Link><h2>Maldives<span>(See beach beautiful site)</span></h2></Link>
-                    <div className="listText_price_box">
-                      <div className="listText_tag_box">
-                        <h2>Tow Nights</h2>
-                      </div>
-                      <div className="listText_tag_box listText_tagPrice_box">
-                        <h2><FaRupeeSign/>40,000.00</h2>
-                      </div>
-                    </div>
-                    <div className="listText_tag_box_articles">
-                        <p>The Maldives consists of 1,190 coral...</p>
-                    </div>
-                  </div>
-                  <div className="addTag_box">
-                    <p>Best Seller</p>
-                  </div>
-                </div>
-              </div>
+              <TripCard title='Malaysia' subTitle='Two Nights' rupee="40,000.00"
+                cobtent="The Malaysia consists of 1,190 coral..." sale="Best Sale" 
+                ImageSource="./images/malaysia2.jpg"/>
             </Col>
-            <Col lg={4}>
-              <div className="tourList_box">
-                <div className="tourList_dtls_box">
-                  <div className="listImg_box">
-                    <Link><img src="./images/London.jpg" alt=""/></Link>
-                  </div>
-                  <div className="listText_box px-3">
-                    <Link><h2>Maldives<span>(See beach beautiful site)</span></h2></Link>
-                    <div className="listText_price_box">
-                      <div className="listText_tag_box">
-                        <h2>Tow Nights</h2>
-                      </div>
-                      <div className="listText_tag_box listText_tagPrice_box">
-                        <h2><FaRupeeSign/>40,000.00</h2>
-                      </div>
-                    </div>
-                    <div className="listText_tag_box_articles">
-                        <p>The Maldives consists of 1,190 coral...</p>
-                    </div>
-                  </div>
-                  <div className="addTag_box">
-                    <p>Best Seller</p>
-                  </div>
-                </div>
-              </div>
+            <Col lg={4} md={6}>
+              <TripCard title='London' subTitle='Two Nights' rupee="40,000.00"
+                cobtent="The London consists of 1,190 coral..." sale="Best Sale" 
+                ImageSource="./images/London.jpg"/>
             </Col>
-            <Col lg={4}>
-              <div className="tourList_box">
-                <div className="tourList_dtls_box">
-                  <div className="listImg_box">
-                    <Link><img src="./images/Florida.jpg" alt=""/></Link>
-                  </div>
-                  <div className="listText_box px-3">
-                    <Link><h2>Maldives<span>(See beach beautiful site)</span></h2></Link>
-                    <div className="listText_price_box">
-                      <div className="listText_tag_box">
-                        <h2>Tow Nights</h2>
-                      </div>
-                      <div className="listText_tag_box listText_tagPrice_box">
-                        <h2><FaRupeeSign/>40,000.00</h2>
-                      </div>
-                    </div>
-                    <div className="listText_tag_box_articles">
-                        <p>The Maldives consists of 1,190 coral...</p>
-                    </div>
-                  </div>
-                  <div className="addTag_box">
-                    <p>Best Seller</p>
-                  </div>
-                </div>
-              </div>
+            <Col lg={4} md={6}>
+              <TripCard title='Florida' subTitle='Two Nights' rupee="40,000.00"
+                  cobtent="The Florida consists of 1,190 coral..." sale="Best Sale" 
+                  ImageSource="./images/Florida.jpg"/>
             </Col>
-            <Col lg={4}>
-              <div className="tourList_box">
-                <div className="tourList_dtls_box">
-                  <div className="listImg_box">
-                    <Link><img src="./images/Dubai.jpg" alt=""/></Link>
-                  </div>
-                  <div className="listText_box px-3">
-                    <Link><h2>Maldives<span>(See beach beautiful site)</span></h2></Link>
-                    <div className="listText_price_box">
-                      <div className="listText_tag_box">
-                        <h2>Tow Nights</h2>
-                      </div>
-                      <div className="listText_tag_box listText_tagPrice_box">
-                        <h2><FaRupeeSign/>40,000.00</h2>
-                      </div>
-                    </div>
-                    <div className="listText_tag_box_articles">
-                        <p>The Maldives consists of 1,190 coral...</p>
-                    </div>
-                  </div>
-                  <div className="addTag_box">
-                    <p>Best Seller</p>
-                  </div>
-                </div>
-              </div>
+            <Col lg={4} md={6}>
+              <TripCard title='Dubai' subTitle='Two Nights' rupee="40,000.00"
+                  cobtent="The Dubai consists of 1,190 coral..." sale="Best Sale" 
+                  ImageSource="./images/Dubai.jpg"/>
             </Col>
-            <Col lg={4}>
-              <div className="tourList_box">
-                <div className="tourList_dtls_box">
-                  <div className="listImg_box">
-                    <Link><img src="./images/Paris.jpg" alt=""/></Link>
-                  </div>
-                  <div className="listText_box px-3">
-                    <Link><h2>Maldives<span>(See beach beautiful site)</span></h2></Link>
-                    <div className="listText_price_box">
-                      <div className="listText_tag_box">
-                        <h2>Tow Nights</h2>
-                      </div>
-                      <div className="listText_tag_box listText_tagPrice_box">
-                        <h2><FaRupeeSign/>40,000.00</h2>
-                      </div>
-                    </div>
-                    <div className="listText_tag_box_articles">
-                        <p>The Maldives consists of 1,190 coral...</p>
-                    </div>
-                  </div>
-                  <div className="addTag_box">
-                    <p>Best Seller</p>
-                  </div>
-                </div>
-              </div>
+            <Col lg={4} md={6}>
+            <TripCard title='Paris' subTitle='Two Nights' rupee="40,000.00"
+                  cobtent="The Paris consists of 1,190 coral..." sale="Best Sale" 
+                  ImageSource="./images/Paris.jpg"/>
             </Col>
           </Row>
         </Container>
         <AddPage/>
         <Container>
+        <h2 className="text-center foreign_heading">Cleint Review</h2>
           <Cleintreview/>
         </Container>
 
